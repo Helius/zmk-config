@@ -12,7 +12,14 @@
         alt_tab: alt_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_ALT>, <&macro_tap>, <&kp TAB>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
 
             label = "ALT_TAB";
         };
@@ -44,10 +51,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1          &kp F2        &kp F3        &kp F4        &kp F5       &kp F6        &kp F7    &kp F8    &kp F9    &kp F10   &trans
-&trans  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp N7    &kp N8    &kp N9    &kp N0    &trans
-&trans  &studio_unlock  &trans        &trans        &trans        &trans       &kp UNDER     &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &trans
-                                      &kp LGUI      &trans        &kp SPACE    &kp RET       &trans    &kp RALT
+&trans  &kp F1          &kp F2                   &kp F3                      &kp F4                 &kp F5       &kp F6        &kp F7           &kp F8        &kp F9             &kp F10   &trans
+&trans  &kp NUMBER_1    &mt LEFT_SHIFT NUMBER_2  &mt RIGHT_CONTROL NUMBER_3  &mt LEFT_ALT NUMBER_4  &kp N5       &kp NUMBER_6  &mt LEFT_ALT N7  &mt LCTRL N8  &mt LEFT_SHIFT N9  &kp N0    &trans
+&trans  &studio_unlock  &trans                   &trans                      &trans                 &trans       &kp UNDER     &kp PLUS         &kp LBRC      &kp RBRC           &kp PIPE  &trans
+                                                 &kp LGUI                    &trans                 &kp SPACE    &kp RET       &trans           &kp RALT
             >;
         };
 
