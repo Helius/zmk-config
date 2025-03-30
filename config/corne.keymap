@@ -8,6 +8,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_ALT &kp TAB>;
+            label = "ALT_TAB";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -34,19 +43,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp F1          &kp F2        &kp F3        &kp F4        &kp F5       &kp F6        &kp F7    &kp F8    &kp F9    &kp F10   &trans
-&kp LCTRL  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp N7    &kp N8    &kp N9    &kp N0    &trans
-&kp LSHFT  &studio_unlock  &trans        &trans        &trans        &trans       &kp UNDER     &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &trans
-                                         &kp LGUI      &trans        &kp SPACE    &kp RET       &trans    &kp RALT
+&trans  &kp F1          &kp F2        &kp F3        &kp F4        &kp F5       &kp F6        &kp F7    &kp F8    &kp F9    &kp F10   &trans
+&trans  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp N7    &kp N8    &kp N9    &kp N0    &trans
+&trans  &studio_unlock  &trans        &trans        &trans        &trans       &kp UNDER     &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &trans
+                                      &kp LGUI      &trans        &kp SPACE    &kp RET       &trans    &kp RALT
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &kp ESCAPE       &kp N2            &kp N3          &kp N4          &kp N5         &kp BACKSPACE  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN  &kp DELETE  &trans
-&trans  &kp TAB          &mt LEFT_SHIFT F  &trans          &trans          &sk LA(TAB)    &kp HOME       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END     &trans
-&trans  &kp PRINTSCREEN  &kp LS(DELETE)    &kp LC(INSERT)  &kp LS(INSERT)  &trans         &trans         &trans          &trans          &trans         &trans      &trans
-                                           &kp LGUI        &trans          &kp SPACE      &kp RET        &trans          &kp RALT
+&trans  &kp ESCAPE       &kp N2            &kp N3          &kp N4          &kp N5       &kp BACKSPACE  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN  &kp DELETE  &trans
+&trans  &kp TAB          &mt LEFT_SHIFT F  &trans          &trans          &alt_tab     &kp HOME       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END     &trans
+&trans  &kp PRINTSCREEN  &kp LS(DELETE)    &kp LC(INSERT)  &kp LS(INSERT)  &trans       &trans         &trans          &trans          &trans         &trans      &trans
+                                           &kp LGUI        &trans          &kp SPACE    &kp RET        &trans          &kp RALT
             >;
         };
     };
