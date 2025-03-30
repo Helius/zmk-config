@@ -26,15 +26,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        clear_bt {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <1 4>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -73,7 +65,7 @@
             bindings = <
 &trans  &kp ESCAPE       &kp N2            &kp N3           &kp N4                 &kp N5       &kp BACKSPACE  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN  &kp DELETE  &trans
 &trans  &kp TAB          &mt LEFT_SHIFT F  &mt LCTRL LCTRL  &mt LEFT_ALT LEFT_ALT  &alt_tab     &kp HOME       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END     &trans
-&trans  &kp PRINTSCREEN  &kp LS(DELETE)    &kp LC(INSERT)   &kp LS(INSERT)         &trans       &trans         &trans          &trans          &trans         &trans      &trans
+&trans  &kp PRINTSCREEN  &kp LS(DELETE)    &kp LC(INSERT)   &kp LS(INSERT)         &trans       &trans         &trans          &bt BT_CLR_ALL  &trans         &trans      &trans
                                            &kp LGUI         &trans                 &kp SPACE    &kp RET        &trans          &kp RALT
             >;
         };
