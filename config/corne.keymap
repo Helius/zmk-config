@@ -51,9 +51,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1          &kp F2                   &kp F3                      &kp F4                 &kp F5       &kp F6        &kp F7           &kp F8        &kp F9             &kp F10   &trans
-&trans  &kp NUMBER_1    &mt LEFT_SHIFT NUMBER_2  &mt RIGHT_CONTROL NUMBER_3  &mt LEFT_ALT NUMBER_4  &kp N5       &kp NUMBER_6  &mt LEFT_ALT N7  &mt LCTRL N8  &mt LEFT_SHIFT N9  &kp N0    &trans
-&trans  &studio_unlock  &trans                   &trans                      &trans                 &trans       &kp UNDER     &kp PLUS         &kp LBRC      &kp RBRC           &kp PIPE  &trans
+&trans  &kp F1          &kp F2                   &kp F3                      &kp F4                 &kp F5       &kp F6        &kp F7           &kp F8            &kp F9             &kp F10        &trans
+&trans  &kp NUMBER_1    &mt LEFT_SHIFT NUMBER_2  &mt RIGHT_CONTROL NUMBER_3  &mt LEFT_ALT NUMBER_4  &kp N5       &kp NUMBER_6  &mt LEFT_ALT N7  &mt LCTRL N8      &mt LEFT_SHIFT N9  &kp N0         &trans
+&trans  &studio_unlock  &trans                   &trans                      &trans                 &trans       &kp MINUS     &kp EQUAL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
                                                  &kp LGUI                    &trans                 &kp SPACE    &kp RET       &trans           &kp RALT
             >;
         };
