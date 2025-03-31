@@ -72,9 +72,9 @@
 
         layer_3 {
             bindings = <
-&trans  &kp ESCAPE       &kp N2            &kp N3           &kp N4                 &kp N5       &kp BACKSPACE  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN  &kp DELETE  &trans
-&trans  &kp TAB          &mt LEFT_SHIFT F  &mt LCTRL LCTRL  &mt LEFT_ALT LEFT_ALT  &alt_tab     &kp HOME       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END     &trans
-&trans  &kp PRINTSCREEN  &kp LS(DELETE)    &kp LC(INSERT)   &kp LS(INSERT)         &trans       &trans         &trans          &bt_clear_bh    &trans         &trans      &trans
+&trans  &kp ESCAPE       &kp N2            &kp N3           &kp N4                 &kp N5       &kp BACKSPACE  &kp PAGE_UP     &none         &kp PAGE_DOWN  &kp INSERT    &trans
+&trans  &kp TAB          &mt LEFT_SHIFT F  &mt LCTRL LCTRL  &mt LEFT_ALT LEFT_ALT  &alt_tab     &kp HOME       &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT      &kp END       &trans
+&trans  &kp PRINTSCREEN  &kp LS(DELETE)    &kp LC(INSERT)   &kp LS(INSERT)         &trans       &kp DELETE     &trans          &kp DOWN      &trans         &bt_clear_bh  &trans
                                            &kp LGUI         &trans                 &kp SPACE    &kp RET        &trans          &kp RALT
             >;
         };
