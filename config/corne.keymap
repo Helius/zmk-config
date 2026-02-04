@@ -28,7 +28,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        combo_quotes {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <36 22>;
+        };
+    };
 
     behaviors {
         bt_clear_bh: bt_clear_bh {
